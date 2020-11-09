@@ -1,0 +1,71 @@
+.main-background
+    height: 100vh
+    width: 100%
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    background-color: whitesmoke
+
+.main-card
+    max-width: 1000px
+    margin: 10px
+.presentation-content
+    padding: 10px
+    min-width: 300px
+    @media screen and ( max-width: 290px )
+        min-width: 100%
+   
+.content-container
+    @media screen and ( max-width: 290px )
+        display: none
+.header-image 
+  background-image: url('../assets/doctor.PNG')
+  background-size: cover
+  width: 100px
+  height: 100px
+  margin: 15px
+  padding: 10px
+
+.rating-list
+    padding: 0
+    display: inline-block
+    list-style: none
+    & li
+        float: right
+        color: #1FA1B2
+
+.specialties-list
+    padding: 0
+    margin: 0
+    padding-right: 8px
+    display: inline-block
+    list-style: none
+    & li
+     float: right
+     background: gainsboro
+     border-radius: 20px 
+    & div 
+        padding: 10px
+hr 
+  margin-top: 20px
+  margin-bottom: 20px
+  border: 0
+  border-top: 1px solid #d4d3d3
+  width: 100%
+
+.pvw-title span 
+  display: none
+
+.pvw-title:after 
+  content: 'Disponible hoy:'
+  @media screen and ( max-width: 290px )
+    content: 'Hoy:'
+
+.date-content
+    color: #551a8b
+    & button
+        background: #1FA1B2
+        color: white
+        border-radius: 20px
